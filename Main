@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<title> project Final</title>
+</head>
+<body>
+<script>
+var worldClock = new Date();
+worldClock.setUTCHours(12);
+worldClock.setUTCMinutes(30);
+worldClock.setUTCSeconds(0);
+alert("Hello");
+var summonSelector = [1,2,3,4,5,6,7,8,9,10];
+var personalBox = [];
+var monsterBox = ["Ahri", "Kaisa", "Evelynn", "Shadow Evelynn", "Akali", "Prestige Akali", "Prestige Kaisa", "Karma", "Neeko", "Winter Wonder Neeko"];
+var normalBox = ["Boo","Boo","Boo","Boo","Boo","Boo","Boo","Boo","Boo","Boo"];
+alert("welcome to the Anime Gacha Game!");
+var myRegExp = /\bBoo\b/gi;
+var summons = prompt("Would you like to do a x1 summon or a x10 summon, " ");
+shuffle(summonSelector);
+if (summons = 1) {
+
+if (summonSelector[0] = 10) {
+alert("You have summoned a super rare monster!");
+shuffle(monsterBox);
+alert("Congratulations you have summoned" + monsterBox[0]);
+else {
+alert("I'm sorry no new super rare monsters today);
+}
+}
+if (summons = 10) {
+for (i = 0; i <= 9; ++i) {
+if (summonSelector[i] != 10) {
+alert("I'm sorry its only a normal monster");
+shuffle(normalBox)
+personalBox[i] = normalBox[i];
+else {
+alert("It's a super rare monster!");
+shuffle(monsterBox)
+alert("You have summoned" + monsterBox[i]);
+personalBox[i] = monsterBox[i];
+
+function btnChkFormClick(e)
+{
+if (personalBox = 0)
+{
+alert("That is not a sufficient amount of monsters");
+}
+else
+{
+alert("Thank you for summoning the monsters");
+}
+
+}
+monsterskept.btnChkForm.addEventListener("click", btnChkFormClick);
+</script>
+<form name ="monsterskept">
+	 this is where the user would select which monsters they want to keep
+	<p>
+	<input type = "button" value = "confirm monster Box" name="btnChkForm">                                                                                                                                         
+</body>
+</html>
